@@ -2,8 +2,8 @@
 
 [![License GPL 3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.txt)
 
-[RIME](https://github.com/rime) ÖĞÖİÔÏÊäÈë·¨ÒıÇæ£¬ÊÇÒ»¸ö¿çÆ½Ì¨µÄÊäÈë·¨Ëã·¨¿ò¼Ü¡£
+[RIME](https://github.com/rime) ä¸­å·éŸµè¾“å…¥æ³•å¼•æ“ï¼Œæ˜¯ä¸€ä¸ªè·¨å¹³å°çš„è¾“å…¥æ³•ç®—æ³•æ¡†æ¶ã€‚
 
-* Windows - Ğ¡ÀÇºÁ Weasel
-* macOS - ÊóĞë¹Ü Squirrel
-* Linux - ibus-rime£¬fcitx-rime
+* Windows - å°ç‹¼æ¯« [Weasel](https://github.com/rime/weasel)
+* macOS - é¼ é¡»ç®¡ [Squirrel](https://github.com/rime/squirrel)
+* Linux - [ibus-rime](https://github.com/rime/ibus-rime)ï¼Œ[fcitx5-rime](https://github.com/fcitx/fcitx5-rime)
