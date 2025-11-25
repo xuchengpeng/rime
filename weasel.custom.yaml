@@ -1,9 +1,9 @@
 patch:
   style:
-    color_scheme: summer
-    color_schema_dark: winter
+    color_scheme: red_light
+    color_schema_dark: red_dark
     font_face: "LXGW Wenkai, Microsoft YaHei"
-    label_font_face: "LXGW Wenkai, Microsoft YaHei" 
+    label_font_face: "LXGW Wenkai, Microsoft YaHei"
     comment_font_face: "LXGW Wenkai, Microsoft YaHei"
     font_point: 14
     label_font_point: 12
@@ -46,33 +46,33 @@ patch:
       corner_radius: 4
       round_corner: 4
   preset_color_schemes:
-    summer:
-      name: "Summer"
-      text_color: 0x8100EB # 默认文字颜色
+    red_light:
+      name: "高粱红"
+      color_format: rgba
+      text_color: 0x000000 # 默认文字颜色
       comment_text_color: 0x8E8E8E # 注释文字颜色
-      label_color: 0x888785 # 标签文字颜色
-      back_color: 0xF9F9F9 # 候选窗背景色
+      label_color: 0x8E8E8E # 标签文字颜色
+      back_color: 0xFFFFFF # 候选窗背景色
       border_color: 0xE7E7E7 # 候选窗边框颜色
-      hilited_candidate_text_color: 0x7A40EC # 高亮候选文字颜色
-      hilited_candidate_back_color: 0xECE4FC # 高亮候选背景颜色
-      hilited_label_color: 0xA483EC # 高亮候选的标签颜色
-      # hilited_mark_color: 0x7A40EC # 高亮候选前的标记颜色
+      hilited_candidate_text_color: 0xC02C38 # 高亮候选文字颜色
+      hilited_candidate_back_color: 0xC02C3826 # 高亮候选背景颜色
+      hilited_label_color: 0xC02C38 # 高亮候选的标签颜色
       hilited_comment_text_color: 0x8E8E8E # 高亮候选的注释颜色
-      candidate_text_color: 0x121212 # 非高亮候选文字颜色
-      candidate_back_color: 0xF9F9F9 # 非高亮候选背景颜色
-    winter:
-      name: "Winter"
-      text_color: 0x8100EB # 默认文字颜色
+      candidate_text_color: 0x454545 # 候选文字颜色
+      candidate_back_color: 0xFFFFFF # 非高亮候选背景颜色
+    red_dark:
+      name: "高粱红·暗"
+      color_format: rgba
+      text_color: 0xFFFFFF # 默认文字颜色
       comment_text_color: 0x8E8E8E # 注释文字颜色
-      label_color: 0x888785 # 标签文字颜色
+      label_color: 0x717171 # 标签文字颜色
       back_color: 0x000000 # 候选窗背景色
       border_color: 0x000000 # 候选窗边框颜色
-      hilited_candidate_text_color: 0x7036E2 # 高亮候选文字颜色
-      hilited_candidate_back_color: 0x2C1E3C # 高亮候选背景颜色
-      hilited_label_color: 0xA483EC # 高亮候选的标签颜色
-      # hilited_mark_color: 0x7036E2 # 高亮候选前的标记颜色
+      hilited_candidate_text_color: 0xFFFFFF # 高亮候选文字颜色
+      hilited_candidate_back_color: 0xC02C38 # 高亮候选背景颜色
+      hilited_label_color: 0xFFFFFF # 高亮候选的标签颜色
       hilited_comment_text_color: 0x8E8E8E # 高亮候选的注释颜色
-      candidate_text_color: 0xD2D2D2 # 候选文字颜色
+      candidate_text_color: 0xBABABA # 候选文字颜色
       candidate_back_color: 0x000000 # 非高亮候选背景颜色
   app_options/emacs.exe:
     ascii_mode: true
