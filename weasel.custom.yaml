@@ -1,15 +1,79 @@
 patch:
-  style/+:
-    color_scheme: google
+  style:
+    color_scheme: summer
+    color_schema_dark: winter
     font_face: "LXGW Wenkai, Microsoft YaHei"
     label_font_face: "LXGW Wenkai, Microsoft YaHei" 
     comment_font_face: "LXGW Wenkai, Microsoft YaHei"
+    font_point: 14
+    label_font_point: 12
+    comment_font_point: 14
+    fullscreen: false
     horizontal: true
+    vertical_text: false
+    vertical_text_left_to_right: false
+    vertical_text_with_wrap: false
+    vertical_auto_reverse: false
+    inline_preedit: true
+    preedit_type: composition
+    label_format: "%s"
+    mark_text: ""
+    ascii_tip_follow_cursor: false
+    enhanced_position: false
+    display_tray_icon: false
+    antialias_mode: default
+    candidate_abbreviate_length: 0
+    hover_type: none
+    paging_on_scroll: false
+    click_to_capture: false
     layout:
-      border_width: 2
+      baseline: 0
+      linespacing: 0
+      align_type: center
+      max_height: 0
+      max_width: 0
+      min_height: 0
+      min_width: 160
+      type: horizontal
+      border_width: 1
+      margin_x: 6
+      margin_y: 6
+      spacing: 10
       candidate_spacing: 10
-      margin_x: 10
-      margin_y: 10
+      hilite_spacing: 4
+      hilite_padding: 2
+      shadow_radius: 0
+      corner_radius: 4
+      round_corner: 4
+  preset_color_schemes:
+    summer:
+      name: "Summer"
+      text_color: 0x8100EB # 默认文字颜色
+      comment_text_color: 0x8E8E8E # 注释文字颜色
+      label_color: 0x888785 # 标签文字颜色
+      back_color: 0xF9F9F9 # 候选窗背景色
+      border_color: 0xE7E7E7 # 候选窗边框颜色
+      hilited_candidate_text_color: 0x7A40EC # 高亮候选文字颜色
+      hilited_candidate_back_color: 0xECE4FC # 高亮候选背景颜色
+      hilited_label_color: 0xA483EC # 高亮候选的标签颜色
+      # hilited_mark_color: 0x7A40EC # 高亮候选前的标记颜色
+      hilited_comment_text_color: 0x8E8E8E # 高亮候选的注释颜色
+      candidate_text_color: 0x121212 # 非高亮候选文字颜色
+      candidate_back_color: 0xF9F9F9 # 非高亮候选背景颜色
+    winter:
+      name: "Winter"
+      text_color: 0x8100EB # 默认文字颜色
+      comment_text_color: 0x8E8E8E # 注释文字颜色
+      label_color: 0x888785 # 标签文字颜色
+      back_color: 0x000000 # 候选窗背景色
+      border_color: 0x000000 # 候选窗边框颜色
+      hilited_candidate_text_color: 0x7036E2 # 高亮候选文字颜色
+      hilited_candidate_back_color: 0x2C1E3C # 高亮候选背景颜色
+      hilited_label_color: 0xA483EC # 高亮候选的标签颜色
+      # hilited_mark_color: 0x7036E2 # 高亮候选前的标记颜色
+      hilited_comment_text_color: 0x8E8E8E # 高亮候选的注释颜色
+      candidate_text_color: 0xD2D2D2 # 候选文字颜色
+      candidate_back_color: 0x000000 # 非高亮候选背景颜色
   app_options/emacs.exe:
     ascii_mode: true
   app_options/WindowsTerminal.exe:
