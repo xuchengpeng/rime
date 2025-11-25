@@ -1,14 +1,12 @@
 patch:
-  ascii_composer:
-    switch_key:
-      Caps_Lock: clear
-      Control_L: noop
-      Control_R: noop
-      Eisu_toggle: clear
-      Shift_L: noop
-      Shift_R: noop
-  menu:
-    page_size: 7
+  ascii_composer/switch_key:
+    Caps_Lock: clear
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: noop
+    Shift_R: noop
+  menu/page_size: 7
   schema_list:
     - schema: double_pinyin
     - schema: luna_pinyin

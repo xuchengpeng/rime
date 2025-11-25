@@ -1,6 +1,15 @@
 patch:
-  "style/color_scheme": google
-  "style/horizontal": true
+  style/+:
+    color_scheme: google
+    font_face: "LXGW Wenkai, Microsoft YaHei"
+    label_font_face: "LXGW Wenkai, Microsoft YaHei" 
+    comment_font_face: "LXGW Wenkai, Microsoft YaHei"
+    horizontal: true
+    layout:
+      border_width: 2
+      candidate_spacing: 10
+      margin_x: 10
+      margin_y: 10
   app_options/emacs.exe:
     ascii_mode: true
   app_options/WindowsTerminal.exe:

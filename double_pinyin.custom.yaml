@@ -1,4 +1,5 @@
 patch:
+  schema/name: 自然码双拼
   switches:
     - name: ascii_mode
       reset: 0
