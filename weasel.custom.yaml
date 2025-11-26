@@ -50,14 +50,14 @@ patch:
       name: "高粱红"
       color_format: rgba
       text_color: 0x000000 # 默认文字颜色
-      comment_text_color: 0x8E8E8E # 注释文字颜色
+      comment_text_color: 0x717171 # 注释文字颜色
       label_color: 0x8E8E8E # 标签文字颜色
       back_color: 0xFFFFFF # 候选窗背景色
       border_color: 0xE7E7E7 # 候选窗边框颜色
       hilited_candidate_text_color: 0xC02C38 # 高亮候选文字颜色
       hilited_candidate_back_color: 0xC02C3826 # 高亮候选背景颜色
       hilited_label_color: 0xC02C38 # 高亮候选的标签颜色
-      hilited_comment_text_color: 0x8E8E8E # 高亮候选的注释颜色
+      hilited_comment_text_color: 0xC02C38 # 高亮候选的注释颜色
       candidate_text_color: 0x454545 # 候选文字颜色
       candidate_back_color: 0xFFFFFF # 非高亮候选背景颜色
     red_dark:
@@ -71,7 +71,7 @@ patch:
       hilited_candidate_text_color: 0xFFFFFF # 高亮候选文字颜色
       hilited_candidate_back_color: 0xC02C38 # 高亮候选背景颜色
       hilited_label_color: 0xFFFFFF # 高亮候选的标签颜色
-      hilited_comment_text_color: 0x8E8E8E # 高亮候选的注释颜色
+      hilited_comment_text_color: 0xFFFFFF # 高亮候选的注释颜色
       candidate_text_color: 0xBABABA # 候选文字颜色
       candidate_back_color: 0x000000 # 非高亮候选背景颜色
   app_options/emacs.exe:
