@@ -10,3 +10,4 @@ patch:
       states: [ 漢字, 汉字 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
+  translator/dictionary: rime_ice
