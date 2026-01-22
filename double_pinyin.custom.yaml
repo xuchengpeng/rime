@@ -6,15 +6,17 @@ patch:
       states: [ 中文, 西文 ]
     - name: full_shape
       states: [ 半角, 全角 ]
-    - name: simplification
-      reset: 1
-      states: [ 漢字, 汉字 ]
+    - name: traditionalization
+      states: [ 汉字, 漢字 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
 
   engine/translators/+:
     - table_translator@custom_phrase  # 自定义短语 custom_phrase_double.txt
     - table_translator@cn_en          # 中英混合词汇
+
+  engine/filters/+:
+    - simplifier@traditionalize  # 简繁切换
 
   # 主翻译器，拼音
   translator/+:
@@ -42,3 +44,10 @@ patch:
     enable_completion: false  # 补全提示
     enable_sentence: false    # 禁止造句
     initial_quality: 99       # custom_phrase 的权重应该比 pinyin 大
+
+  # 简繁切换
+  traditionalize:
+    option_name: traditionalization  # 对应 switches 中的 name
+    opencc_config: s2t.json          # s2t.json | s2hk.json | s2tw.json | s2twp.json （Rime 内置配置，在程序目录可找到）
+    tips: none                       # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+    tags: [ abc, number, gregorian_to_lunar ]  # 限制在对应 tag，不对其他如反查的内容做简繁转换
