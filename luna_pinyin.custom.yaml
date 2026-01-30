@@ -1,12 +1,13 @@
 patch:
   switches:
     - name: ascii_mode
-      reset: 0
       states: [ 中文, 西文 ]
     - name: full_shape
       states: [ 半角, 全角 ]
     - name: traditionalization
       states: [ 汉字, 漢字 ]
+    - name: emoji
+      states: [ 💀, 😄 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
 
@@ -15,6 +16,7 @@ patch:
     - table_translator@cn_en          # 中英混合词汇
 
   engine/filters/+:
+    - simplifier@emoji           # Emoji
     - simplifier@traditionalize  # 简繁切换
 
   # 主翻译器，拼音
@@ -42,6 +44,12 @@ patch:
     enable_completion: false  # 补全提示
     enable_sentence: false    # 禁止造句
     initial_quality: 99       # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
+
+  # Emoji
+  emoji:
+    option_name: emoji         # 对应 switches 中的 name
+    opencc_config: emoji.json  # 选择要加载的 OpenCC 配置
+    inherit_comment: false     # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
 
   # 简繁切换
   traditionalize:

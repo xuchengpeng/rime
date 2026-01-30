@@ -8,4 +8,4 @@
 * macOS - 鼠须管 [Squirrel](https://github.com/rime/squirrel)
 * Linux - [ibus-rime](https://github.com/rime/ibus-rime)，[fcitx5-rime](https://github.com/fcitx/fcitx5-rime)
 
-输入法方案依赖[雾凇拼音](https://github.com/iDvel/rime-ice)的词库，把`cn_dicts`和`en_dicts`拷贝到RIME部署的目录，重新部署即可使用。
+输入法方案依赖[雾凇拼音](https://github.com/iDvel/rime-ice)的词库，把`cn_dicts`、`en_dicts`和`opencc`拷贝到RIME部署的目录，重新部署即可使用。

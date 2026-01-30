@@ -20,10 +20,7 @@ patch:
       # - F4
     option_list_separator: "／"
     save_options:
-      - full_shape
       - ascii_punct
-      - simplification
-      - extended_charset
-      - zh_hant
-      - zh_hans
-      - zh_hant_tw
+      - full_shape
+      - traditionalization
+      - emoji
